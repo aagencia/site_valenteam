@@ -4,7 +4,7 @@
     justify-content: space-between;
     position: absolute;
     width: 100%;
-    z-index: 300;
+    z-index: 3;
     top: 8%;
     font-size: 1rem;
     vertical-align: middle;
@@ -21,6 +21,7 @@
     #links{
         padding-right: 20%;
         top: 50%;
+        width: 100vw;
         //transform: translateY(50%);
 
         a{
@@ -161,6 +162,163 @@ nav{
 #Servicos{
     min-height: 100vh;
     background-color: #989898;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    color: white;
+
+    .subtitle{
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        width: 60%;
+        margin-bottom: 2rem;
+
+        h3{
+            font-family: 'MonumentExtended';
+            font-size: 2rem;
+            letter-spacing: 0.1rem;
+        }
+    }
+
+    .title{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        align-self: center;
+        border: 1px solid white;
+        padding: 0.5rem;
+        margin-top: 2rem;
+        align-items: center;
+
+        h3{
+            font-family: 'BwModelica';
+            font-weight: lighter;
+            font-size: 1.8rem;
+        }
+
+        img{
+            height: 1.5rem;
+        }
+    }
+
+    .container {
+        display: flex;
+        flex-direction: row;
+        font-family: 'BwModelica';
+        font-weight: lighter;
+        align-items: center;
+        width: 60%;
+        justify-content: space-between;
+        margin-bottom: 3rem;
+
+        .preparacao, .revisao, .loja{
+            width: 30%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 100%;
+        }
+
+        h1{
+            font-family: "BwStretch";
+            font-weight: bold;
+            font-size: 3rem;
+            color: #d1ec5f;
+        }
+
+        a{
+            text-decoration: none;
+            color: white;
+        }
+        a:hover{
+            color: #d1ec5f;
+            transition: color 1s;
+            img{
+                animation: pulse-whats 0.5s infinite ease-in-out alternate
+            }
+        }
+
+        .cta{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            font-family: 'MonumentExtended';
+            font-size: 1rem;
+            border: 1px solid white;
+            justify-content: space-between;
+            padding: 0.2rem;
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+            
+            .whats{
+                height: 2rem;
+            }
+        }
+
+        .texto{
+            font-size: 0.8rem;
+        }
+
+        .banner{
+            width: 100%;
+        }
+    }
+}
+
+#CTA-Banner{
+    height: 50vh;
+    background-image: url(banner-cta.jpg);
+    background-position: right;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    width: 100%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .texto{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        align-self: center;
+        width: 16%;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+
+        p{
+            font-family: 'BwModelica';
+            font-weight: bold;
+            border: 1px solid white;
+            font-size: 2.5rem;
+            padding: 0.2rem;
+        }
+        h1{
+            font-family: 'BwStretch';
+            font-size: 2.5rem;
+            letter-spacing: 0.3rem;
+        }
+        h3{
+            font-family: 'BwModelica';
+            font-weight: lighter;
+            font-size: 0.8rem;
+            text-align: left;
+        }
+        .whats{
+            position: absolute;
+            bottom: -2rem;
+            right: -5rem;
+            height: 3rem;
+            animation: gelatine 6s infinite;
+        }
+            
+    }
 }
 
 .slide-right {

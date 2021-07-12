@@ -1,5 +1,6 @@
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
@@ -7,7 +8,7 @@ body {
   overflow-x: hidden;
 }
 
-h1, p {
+h1, h2, h3, p {
   margin-block: 0;
 }
 
@@ -38,6 +39,12 @@ h1, p {
 @font-face {
   font-family: 'BwModelica';
   src: url("fonts/BwModelica-Bold.eot?") format("eot"), url("fonts/BwModelica-Bold.woff") format("woff"), url("fonts/BwModelica-Hairline.ttf") format("truetype");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: 'BwStretch';
+  src: url("fonts/BwStretch-Black.eot?") format("eot"), url("fonts/BwStretch-Black.woff") format("woff"), url("fonts/BwStretch-Black.ttf") format("truetype");
   font-weight: bold;
 }
 
@@ -150,6 +157,66 @@ h1, p {
   }
   100% {
     text-shadow: 0 0 0 rgba(209, 236, 95, 0);
+  }
+}
+
+@-webkit-keyframes pulse-whats {
+  from {
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+  }
+  to {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+}
+
+@keyframes pulse-whats {
+  from {
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+  }
+  to {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+}
+
+@-webkit-keyframes gelatine {
+  from, to {
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+  }
+  70% {
+    -webkit-transform: scale(0.9, 1.1);
+            transform: scale(0.9, 1.1);
+  }
+  75% {
+    -webkit-transform: scale(1.1, 0.9);
+            transform: scale(1.1, 0.9);
+  }
+  80% {
+    -webkit-transform: scale(0.95, 1.05);
+            transform: scale(0.95, 1.05);
+  }
+}
+
+@keyframes gelatine {
+  from, to {
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+  }
+  70% {
+    -webkit-transform: scale(0.9, 1.1);
+            transform: scale(0.9, 1.1);
+  }
+  75% {
+    -webkit-transform: scale(1.1, 0.9);
+            transform: scale(1.1, 0.9);
+  }
+  80% {
+    -webkit-transform: scale(0.95, 1.05);
+            transform: scale(0.95, 1.05);
   }
 }
 /*# sourceMappingURL=definitions.css.map */
