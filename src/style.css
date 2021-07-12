@@ -1,0 +1,183 @@
+#Navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: absolute;
+  width: 100%;
+  z-index: 300;
+  top: 8%;
+  font-size: 1rem;
+  vertical-align: middle;
+  font-family: 'BwModelica';
+  font-weight: normal;
+}
+
+#Navbar .logo {
+  width: 20%;
+  min-width: 15rem;
+  padding-left: 5%;
+}
+
+#Navbar #links {
+  padding-right: 20%;
+  top: 50%;
+}
+
+#Navbar #links a {
+  text-decoration: none;
+  color: white;
+  margin-left: 1rem;
+}
+
+#Navbar #links a:hover {
+  font-weight: bold;
+  -webkit-transition: font-weight 1s;
+  transition: font-weight 1s;
+}
+
+#Navbar .hamburguer {
+  display: none;
+}
+
+nav {
+  display: none;
+}
+
+#Banner {
+  background-image: url(home.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+}
+
+#Banner .logo {
+  display: none;
+}
+
+#Banner .texto {
+  width: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  pointer-events: none;
+}
+
+#Banner .texto img {
+  width: 100%;
+  height: auto;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+#Sobre {
+  background-color: #1e1e1e;
+  min-height: 100vh;
+  color: white;
+  font-family: 'Montserrat';
+  position: relative;
+}
+
+#Sobre h1 {
+  font-family: 'MonumentExtended';
+  color: #d1ec5f;
+  font-size: 5rem;
+  line-height: 5rem;
+}
+
+#Sobre .pulse {
+  -webkit-animation: pulse 1s ease-in 2 both;
+  animation: pulse 1s ease-in 2 both;
+}
+
+#Sobre p {
+  font-size: 0.8125rem;
+  width: 30%;
+}
+
+#Sobre .texto {
+  position: absolute;
+  top: 50%;
+  left: 15%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+#Sobre .carro {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  height: 60%;
+}
+
+#Sobre .faixaUp {
+  width: 40%;
+  position: absolute;
+  top: 20%;
+  left: 70%;
+  -webkit-box-shadow: -7px 10px 9px 3px rgba(30, 30, 30, 0.5);
+  box-shadow: -7px 10px 9px 3px rgba(30, 30, 30, 0.5);
+  -webkit-animation: slide-faixaUp 10s cubic-bezier(0.645, 0.045, 0.355, 1) infinite alternate-reverse both;
+  animation: slide-faixaUp 10s cubic-bezier(0.645, 0.045, 0.355, 1) infinite alternate-reverse both;
+}
+
+#Sobre .faixaDown {
+  width: 40%;
+  -webkit-transform: rotate(-7deg);
+          transform: rotate(-7deg);
+  position: absolute;
+  bottom: 20%;
+  left: 70%;
+  -webkit-box-shadow: -7px -10px 9px 3px rgba(30, 30, 30, 0.5);
+  box-shadow: -7px -10px 9px 3px rgba(30, 30, 30, 0.5);
+  filter: brightness(80%);
+  -webkit-filter: brightness(68%);
+  -webkit-animation: slide-faixaDown 8s cubic-bezier(0.645, 0.045, 0.355, 1) infinite alternate-reverse both;
+  animation: slide-faixaDown 8s cubic-bezier(0.645, 0.045, 0.355, 1) infinite alternate-reverse both;
+}
+
+#Servicos {
+  min-height: 100vh;
+  background-color: #989898;
+}
+
+.slide-right {
+  -webkit-animation: slide-right 2s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+  animation: slide-right 2s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+}
+
+.slide-left {
+  -webkit-animation: slide-left 2s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+  animation: slide-left 2s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+}
+/*# sourceMappingURL=style.css.map */
