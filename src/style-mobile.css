@@ -112,11 +112,13 @@
   #Banner .logo {
     display: block;
     position: absolute;
-    width: 20%;
-    min-width: 15rem;
+    width: 30%;
     top: 8%;
   }
   #Sobre {
+    display: none;
+  }
+  #Servicos {
     display: none;
   }
 }

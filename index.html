@@ -10,14 +10,15 @@
     <!-- <link rel="icon" type="image/png" href="./src/favicon.png"/> -->
     <script src="https://kit.fontawesome.com/5747111c12.js" crossorigin="anonymous"></script>
     <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <script src="/scripts.js"></script>
 
 </head>
 <body>
     <section id="Navbar">
         <img class="logo" src="/src/valenteam-horizontal.png" alt="">
         <div id="links">
-            <a href="#Sobre">Sobre</a>
-            <a href="#Servicos">Serviços</a>
+            <a onclick="scrollSmoothTo('Sobre')">Sobre</a>
+            <a onclick="scrollSmoothTo('Servicos')">Serviços</a>
             <a href="#Contato">Clientes</a>
             <a href="https://www.instagram.com/valenteam.utv/" target="_blank"><i class="fab fa-instagram"></i></a>
         </div>
@@ -65,19 +66,8 @@
     </section>
 
     <section id="Servicos">
-
-
     </section>
 
-    <script>
-        function menu() {
-          var x = document.getElementById("links");
-          if (x.style.display === "block") {
-            x.style.display = "none";
-          } else {
-            x.style.display = "block";
-          }
-        }
-        </script>
+
 </body>
 </html>

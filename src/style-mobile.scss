@@ -92,28 +92,30 @@
         transition-delay: 2s;
     }
   }
-  
-
     
-    #Banner{
-        .texto{
-            width: 60%;
-            left: 50%;
-            top: 50%;
-            transform: translate(-50%, -50%);
-        }
+  #Banner{
+      .texto{
+          width: 60%;
+          left: 50%;
+          top: 50%;
+          transform: translate(-50%, -50%);
+      }
 
-        .logo{
-            display: block;
-            position: absolute;
-            width: 20%;
-            min-width: 15rem;
-            top: 8%;
-        }
-    }
+      .logo{
+          display: block;
+          position: absolute;
+          width: 30%;
+          //min-width: 15rem;
+          top: 8%;
+      }
+  }
 
-    #Sobre{
-        display: none;
-    }
+  #Sobre{
+      display: none;
+  }
+
+  #Servicos{
+    display: none;
+  }
     
 }
