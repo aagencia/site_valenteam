@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="src/style.css"/>
     <link rel="stylesheet" href="src/style-mobile.css"/>
     <link rel="stylesheet" href="src/definitions.css"/>
-    <!-- <link rel="icon" type="image/png" href="./src/favicon.png"/> -->
+    <link rel="icon" type="image/png" href="./src/favicon.png"/>
     <script src="https://kit.fontawesome.com/5747111c12.js" crossorigin="anonymous"></script>
     <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
     <script src="/scripts.js"></script>
@@ -19,28 +19,26 @@
         <div id="links">
             <a onclick="scrollSmoothTo('Sobre')">Sobre</a>
             <a onclick="scrollSmoothTo('Servicos')">Serviços</a>
-            <a href="#Contato">Clientes</a>
+            <!-- <a onclick="scrollSmoothTo('Contato')">Contato</a> -->
             <a href="https://www.instagram.com/valenteam.utv/" target="_blank"><i class="fab fa-instagram"></i></a>
         </div>
-        <a href="javascript:void(0);" class="hamburguer" onclick="menu()">
-            <i class="fa fa-bars" aria-hidden="true"></i>
-        </a>
     </section>
 
-    <nav role="navigation">
+    <nav id="Navbar-mobile">
         <div id="menuToggle">
-          <input type="checkbox" />
+            <input id="checkbox-menu" type="checkbox" />
             <span></span>
             <span></span>
             <span></span>
-            <ul id="menu">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Info</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-       </div>
-      </nav>
+            
+        <ul id="menu">
+            <li><a onclick="scrollSmoothTo('Sobre')">Sobre</a></li>
+            <li><a onclick="scrollSmoothTo('Servicos')">Serviços</a></li>
+            <li><a onclick="scrollSmoothTo('Contato')">Contato</a></li>
+            <li><a href="https://www.instagram.com/valenteam.utv/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+        </ul>
+        </div>
+    </nav>
 
     <section id="Banner">
         <img class="logo" src="/src/VT_Avatar.png" alt="ValenTeam">
@@ -52,14 +50,16 @@
     </section>
 
     <section id="Sobre">
-        <img class="carro" src="src/carrinho.jpg" alt="Carro verde">
-        <div class="texto">
-            <h1><span class="pulse">PAIXÃO</span> PELA<br>AVENTURA</h1>
-            <p> Valenteam surgiu da paixão por aventura.<br>
-                Com muita vontade de se aventurar, superar obstáculos e explorar novos caminhos, nos  apaixonamos pelo mundo automobilístico e em especial por UTV.<br>
-                Foram competições e convivências que nos fizeram ter mais vontade de aprender a montar e melhorar nossos carros. <br>
-                Daí pra frente o negócio começou a se estabelecer e hoje, com uma estrutura moderna, profissionais engajados e uma loja de acessórios com as melhores marcas do mercado,  atendemos clientes de todo o nordeste.
-            </p>
+        <div class="conteudo">
+            <div class="texto">
+                <h1><span class="pulse">PAIXÃO</span> PELA<br>AVENTURA</h1>
+                <p> Valenteam surgiu da paixão por aventura.<br>
+                    Com muita vontade de se aventurar, superar obstáculos e explorar novos caminhos, nos  apaixonamos pelo mundo automobilístico e em especial por UTV.<br>
+                    Foram competições e convivências que nos fizeram ter mais vontade de aprender a montar e melhorar nossos carros. <br>
+                    Daí pra frente o negócio começou a se estabelecer e hoje, com uma estrutura moderna, profissionais engajados e uma loja de acessórios com as melhores marcas do mercado,  atendemos clientes de todo o nordeste.
+                </p>
+            </div>
+            <img class="carro" src="src/carrinho.jpg" alt="Carro verde">
         </div>
         <img class="faixaUp" src="src/faixa.png" alt="faixa">
         <img class="faixaDown" src="src/faixa.png" alt="faixa">
@@ -114,14 +114,31 @@
 
     <section id="CTA-Banner">
         <div class="texto">
-            <p>HORA DE</p>
-            <h1>PISAR FUNDO</h1>
+            <p>HORA<br>DE</p>
+            <h1>PISAR<br>FUNDO</h1>
             <h3>Se está querendo entrar no mundo do UTV ou melhorar seu equipamento para ter um desempenho ainda melhor, fala com a gente.</h3>
             <a href="https://api.whatsapp.com/send?phone=5584981350101&text=Ol%C3%A1%2C%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20da%20Valenteam." target="_blank"><img class="whats" src="src/whatsapp.png" alt="Whatsapp"></a>
         </div>
+    </section>
 
+
+    <section id="Contato">
+
+        <div class="texto">
+            <img class="logo" src="src/VT_Avatar_Black.png" alt="ValenTeam">
+            <p class="adress">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. In veritatis debitis quo cumque, sunt assumenda deleniti reprehenderit nostrum, laboriosam, dignissimos repudiandae!
+            </p>
+        </div>
+        <div class="mapa">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3969.2750950283985!2d-35.220817484692766!3d-5.816770195785121!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7b255593ea1d46d%3A0x95fe3338b7260095!2sAAG%C3%8ANCIA%20DIGITAL!5e0!3m2!1spt-BR!2sbr!4v1626182801440!5m2!1spt-BR!2sbr" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
 
     </section>
+
+    <footer>
+        <a href="http://aagenciadigital.com/" target="_blank"><img src="src/aagencia.png" alt="AAgência Digital"></a>
+    </footer>
 
 
 </body>

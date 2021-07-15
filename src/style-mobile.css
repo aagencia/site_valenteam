@@ -2,13 +2,12 @@
   #Navbar {
     display: none;
   }
-  nav {
+  #Navbar-mobile {
     display: block;
     height: 65px;
     position: absolute;
-    width: 100vw;
   }
-  #menuToggle {
+  #Navbar-mobile #menuToggle {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -17,15 +16,16 @@
         -ms-flex-direction: column;
             flex-direction: column;
     position: relative;
-    top: 8vh;
-    left: 4vw;
+    top: 10vh;
+    left: 5vw;
     z-index: 1;
     -webkit-user-select: none;
     -moz-user-select: none;
      -ms-user-select: none;
          user-select: none;
+    cursor: pointer;
   }
-  #menuToggle input {
+  #Navbar-mobile #menuToggle input {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -36,7 +36,7 @@
     opacity: 0;
     z-index: 2;
   }
-  #menuToggle span {
+  #Navbar-mobile #menuToggle span {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -54,38 +54,44 @@
     transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
     transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease, -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
   }
-  #menuToggle span:first-child {
+  #Navbar-mobile #menuToggle input:checked ~ ul {
+    -webkit-transform: none;
+            transform: none;
+  }
+  #Navbar-mobile #menuToggle input:checked ~ span {
+    background: black;
+  }
+  #Navbar-mobile span:first-child {
     -webkit-transform-origin: 0% 0%;
             transform-origin: 0% 0%;
   }
-  #menuToggle span:nth-last-child(2) {
+  #Navbar-mobile span:nth-last-child(2) {
     -webkit-transform-origin: 0% 100%;
             transform-origin: 0% 100%;
   }
-  #menuToggle input:checked ~ span {
+  #Navbar-mobile input:checked ~ span {
     opacity: 1;
     -webkit-transform: rotate(45deg) translate(-3px, -1px);
             transform: rotate(45deg) translate(-3px, -1px);
     background: #36383F;
   }
-  #menuToggle input:checked ~ span:nth-last-child(3) {
+  #Navbar-mobile input:checked ~ span:nth-last-child(3) {
     opacity: 0;
     -webkit-transform: rotate(0deg) scale(0.2, 0.2);
             transform: rotate(0deg) scale(0.2, 0.2);
   }
-  #menuToggle input:checked ~ span:nth-last-child(2) {
+  #Navbar-mobile input:checked ~ span:nth-last-child(2) {
     -webkit-transform: rotate(-45deg) translate(0, -1px);
             transform: rotate(-45deg) translate(0, -1px);
   }
   #menu {
     position: absolute;
-    width: 40vw;
-    height: 100vh;
+    width: 50vw;
+    height: 75vh;
     -webkit-box-shadow: 0 0 10px #85888C;
             box-shadow: 0 0 10px #85888C;
     margin: -50px 0 0 -50px;
     padding: 50px;
-    padding-top: 125px;
     background-color: #F5F6FA;
     -webkit-font-smoothing: antialiased;
     -webkit-transform-origin: 0% 0%;
@@ -96,11 +102,28 @@
     transition: -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
     transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
     transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   #menu li {
-    padding: 10px 0;
+    padding: 1rem 0;
     -webkit-transition-delay: 2s;
             transition-delay: 2s;
+    font-family: "MonumentExtended";
+    list-style-type: none;
+    color: black;
+    vertical-align: middle;
+  }
+  #menu li a {
+    text-decoration: none;
   }
   #Banner .texto {
     width: 60%;
@@ -112,14 +135,137 @@
   #Banner .logo {
     display: block;
     position: absolute;
-    width: 30%;
-    top: 8%;
+    height: 10vh;
+    top: 7.5vh;
   }
   #Sobre {
     display: none;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #Sobre .conteudo {
+    width: 90vw;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 0.7fr 1.3fr;
+        grid-template-columns: 0.7fr 1.3fr;
+    -ms-grid-rows: 1fr;
+        grid-template-rows: 1fr;
+    gap: 0px 5rem;
+        grid-template-areas: ". .";
+    justify-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #Sobre h1 {
+    font-family: 'MonumentExtended';
+    color: #d1ec5f;
+    font-size: 3rem;
+    line-height: 3rem;
+    width: 100%;
+    position: absolute;
+    -webkit-transform: translateY(-3rem);
+            transform: translateY(-3rem);
+  }
+  #Sobre .pulse {
+    -webkit-animation: pulse 1s ease-in 2 both;
+    animation: pulse 1s ease-in 2 both;
+  }
+  #Sobre p {
+    font-size: 0.7rem;
+    -webkit-transform: translateY(3rem);
+            transform: translateY(3rem);
+  }
+  #Sobre .carro {
+    height: auto;
+    width: 100%;
+  }
+  #Sobre .faixaUp {
+    width: 40%;
+    position: absolute;
+    top: 20%;
+    left: 70%;
+    -webkit-box-shadow: -7px 10px 9px 3px rgba(30, 30, 30, 0.5);
+    box-shadow: -7px 10px 9px 3px rgba(30, 30, 30, 0.5);
+    -webkit-animation: slide-faixaUp 10s cubic-bezier(0.645, 0.045, 0.355, 1) infinite alternate-reverse both;
+    animation: slide-faixaUp 10s cubic-bezier(0.645, 0.045, 0.355, 1) infinite alternate-reverse both;
+  }
+  #Sobre .faixaDown {
+    width: 40%;
+    -webkit-transform: rotate(-7deg);
+            transform: rotate(-7deg);
+    position: absolute;
+    bottom: 20%;
+    left: 70%;
+    -webkit-box-shadow: -7px -10px 9px 3px rgba(30, 30, 30, 0.5);
+    box-shadow: -7px -10px 9px 3px rgba(30, 30, 30, 0.5);
+    filter: brightness(80%);
+    -webkit-filter: brightness(68%);
+    -webkit-animation: slide-faixaDown 8s cubic-bezier(0.645, 0.045, 0.355, 1) infinite alternate-reverse both;
+    animation: slide-faixaDown 8s cubic-bezier(0.645, 0.045, 0.355, 1) infinite alternate-reverse both;
   }
   #Servicos {
     display: none;
+  }
+  #CTA-Banner {
+    height: 50vh;
+    background-image: url(banner-cta-mobile.jpg);
+    background-position: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: right;
+        -ms-flex-align: right;
+            align-items: right;
+  }
+  #CTA-Banner .texto {
+    width: 50%;
+    top: 50%;
+    right: 5%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+  }
+  #CTA-Banner .texto p {
+    font-size: 1.5rem;
+    padding: 0.1rem;
+  }
+  #CTA-Banner .texto h1 {
+    font-size: 1.5rem;
+    padding-top: 0.5rem;
+  }
+  #CTA-Banner .texto h3 {
+    font-size: 0.7rem;
+    text-align: left;
+  }
+  #CTA-Banner .texto .whats {
+    position: absolute;
+    bottom: 0;
+    right: -5rem;
+    height: 3rem;
+    -webkit-animation: gelatine 6s infinite;
+            animation: gelatine 6s infinite;
+  }
+  #CTA-Banner .texto .whats:hover {
+    filter: brightness(100);
+    -webkit-filter: brightness(100);
+    -webkit-transition: -webkit-filter 0.5s ease-in-out;
+    transition: -webkit-filter 0.5s ease-in-out;
+    transition: filter 0.5s ease-in-out;
+    transition: filter 0.5s ease-in-out, -webkit-filter 0.5s ease-in-out;
+    -webkit-transition: -webkit-filter 0.5s linear ease-in-out;
+  }
+  footer img {
+    height: 0.8rem;
+    padding: 0.5rem;
   }
 }
 /*# sourceMappingURL=style-mobile.css.map */

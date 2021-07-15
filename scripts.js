@@ -1,14 +1,5 @@
 function scrollSmoothTo(elementId) {
   var element = document.getElementById(elementId);
   element.scrollIntoView({ block: 'start',  behavior: 'smooth' });
+  document.getElementById("checkbox-menu").checked = false;
 }
-
-function menu() {
-  var x = document.getElementById("links");
-  if (x.style.display === "block") {
-    x.style.display = "none";
-  } else {
-    x.style.display = "block";
-  }
-}
-
