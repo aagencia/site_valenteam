@@ -158,7 +158,7 @@ nav {
           transform: translateY(3rem);
 }
 
-#Sobre .carro {
+#Sobre #carro {
   height: auto;
   width: 100%;
 }
