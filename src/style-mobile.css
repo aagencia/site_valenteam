@@ -1,4 +1,13 @@
 @media only screen and (max-width: 720px) {
+  .whatsapp-fixed .cta {
+    font-size: 0.8rem;
+    padding: 0.2rem 1rem 0.2rem 1rem;
+    margin-right: 2rem;
+    margin-bottom: 2rem;
+  }
+  .whatsapp-fixed .cta .whats {
+    height: 1.8rem;
+  }
   #Navbar {
     display: none;
   }
@@ -117,7 +126,7 @@
     padding: 1rem 0;
     -webkit-transition-delay: 2s;
             transition-delay: 2s;
-    font-family: "MonumentExtended";
+    font-family: Lato;
     list-style-type: none;
     color: black;
     vertical-align: middle;
@@ -214,7 +223,7 @@
     padding: 0rem;
   }
   #Servicos .title h3 {
-    font-family: 'BwModelica';
+    font-family: Lato;
     font-weight: lighter;
     font-size: 1.5rem;
     padding: 0.2rem;

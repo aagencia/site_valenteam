@@ -1,3 +1,63 @@
+.whatsapp-fixed {
+  text-decoration: none;
+  color: white;
+}
+
+.whatsapp-fixed img {
+  margin-left: 1rem;
+}
+
+.whatsapp-fixed .cta {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: 'MonumentExtended';
+  font-size: 1rem;
+  border: 1px solid white;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  margin-right: 2rem;
+  margin-bottom: 2rem;
+  z-index: 10;
+}
+
+.whatsapp-fixed .cta .whats {
+  height: 2rem;
+}
+
+.whatsapp-fixed:hover {
+  color: #d1ec5f;
+  -webkit-transition-property: color, text;
+  transition-property: color, text;
+  -webkit-transition-duration: 0.5s, 0.5s;
+          transition-duration: 0.5s, 0.5s;
+  -webkit-transition-timing-function: linear, ease-in;
+          transition-timing-function: linear, ease-in;
+  -moz-transition-property: color, text;
+  -moz-transition-duration: 0.5s;
+  -moz-transition-timing-function: linear, ease-in;
+  -o-transition-property: color, text;
+  -o-transition-duration: 0.5s;
+  -o-transition-timing-function: linear, ease-in;
+}
+
+.whatsapp-fixed:hover img {
+  -webkit-animation: pulse-whats 0.5s infinite ease-in-out alternate;
+          animation: pulse-whats 0.5s infinite ease-in-out alternate;
+}
+
 #Navbar {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -294,53 +354,16 @@ nav {
   height: 100%;
 }
 
+#Servicos .container img {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
 #Servicos .container h1 {
   font-family: "BwStretch";
   font-weight: bold;
   font-size: 3rem;
   color: #d1ec5f;
-}
-
-#Servicos .container a {
-  text-decoration: none;
-  color: white;
-}
-
-#Servicos .container a:hover {
-  color: #d1ec5f;
-  -webkit-transition: color 1s;
-  transition: color 1s;
-}
-
-#Servicos .container a:hover img {
-  -webkit-animation: pulse-whats 0.5s infinite ease-in-out alternate;
-          animation: pulse-whats 0.5s infinite ease-in-out alternate;
-}
-
-#Servicos .container .cta {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  font-family: 'MonumentExtended';
-  font-size: 1rem;
-  border: 1px solid white;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  padding: 0.2rem;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-}
-
-#Servicos .container .cta .whats {
-  height: 2rem;
 }
 
 #Servicos .container .texto {
@@ -352,7 +375,7 @@ nav {
 }
 
 #CTA-Banner {
-  height: 50vh;
+  min-height: 50vh;
   background-image: url(banner-cta.jpg);
   background-position: right;
   background-size: cover;
@@ -412,25 +435,6 @@ nav {
   font-size: 0.8rem;
   text-align: left;
   padding-top: 0.5rem;
-}
-
-#CTA-Banner .texto .whats {
-  position: absolute;
-  bottom: -2rem;
-  right: -5rem;
-  height: 3rem;
-  -webkit-animation: gelatine 6s infinite;
-          animation: gelatine 6s infinite;
-}
-
-#CTA-Banner .texto .whats:hover {
-  filter: brightness(100);
-  -webkit-filter: brightness(100);
-  -webkit-transition: -webkit-filter 0.5s ease-in-out;
-  transition: -webkit-filter 0.5s ease-in-out;
-  transition: filter 0.5s ease-in-out;
-  transition: filter 0.5s ease-in-out, -webkit-filter 0.5s ease-in-out;
-  -webkit-transition: -webkit-filter 0.5s linear ease-in-out;
 }
 
 #Contato {

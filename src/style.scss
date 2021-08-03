@@ -1,3 +1,51 @@
+.whatsapp-fixed{
+    text-decoration: none;
+    color: white;
+
+    img{
+        margin-left: 1rem;
+    }
+
+    .cta{
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        font-family: 'MonumentExtended';
+        font-size: 1rem;
+        border: 1px solid white;
+        justify-content: space-between;
+        padding: 0.5rem 1rem 0.5rem 1rem;
+        margin-right: 2rem;
+        margin-bottom: 2rem;
+        z-index: 10;
+        
+        .whats{
+            height: 2rem;
+        }
+    }
+}
+.whatsapp-fixed:hover{
+    color: #d1ec5f;
+    transition-property:color, text;
+    transition-duration: 0.5s, 0.5s;
+    transition-timing-function: linear, ease-in;
+
+    -moz-transition-property:color, text;
+    -moz-transition-duration:0.5s;
+    -moz-transition-timing-function: linear, ease-in;
+
+    -o-transition-property:color, text;
+    -o-transition-duration:0.5s;
+    -o-transition-timing-function: linear, ease-in;
+
+    img{
+        animation: pulse-whats 0.5s infinite ease-in-out alternate
+    }
+}
+
 #Navbar{
     display: flex;
     flex-direction: row;
@@ -228,40 +276,16 @@ nav{
             height: 100%;
         }
 
+        img{
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+        }
+
         h1{
             font-family: "BwStretch";
             font-weight: bold;
             font-size: 3rem;
             color: #d1ec5f;
-        }
-
-        a{
-            text-decoration: none;
-            color: white;
-        }
-        a:hover{
-            color: #d1ec5f;
-            transition: color 1s;
-            img{
-                animation: pulse-whats 0.5s infinite ease-in-out alternate
-            }
-        }
-
-        .cta{
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            font-family: 'MonumentExtended';
-            font-size: 1rem;
-            border: 1px solid white;
-            justify-content: space-between;
-            padding: 0.2rem;
-            margin-top: 2rem;
-            margin-bottom: 2rem;
-            
-            .whats{
-                height: 2rem;
-            }
         }
 
         .texto{
@@ -275,7 +299,7 @@ nav{
 }
 
 #CTA-Banner{
-    height: 50vh;
+    min-height: 50vh;
     background-image: url(banner-cta.jpg);
     background-position: right;
     background-size: cover;
@@ -316,19 +340,6 @@ nav{
             font-size: 0.8rem;
             text-align: left;
             padding-top: 0.5rem;
-        }
-        .whats{
-            position: absolute;
-            bottom: -2rem;
-            right: -5rem;
-            height: 3rem;
-            animation: gelatine 6s infinite;
-        }
-        .whats:hover{
-            filter: brightness(100);
-            -webkit-filter: brightness(100);
-            transition: filter 0.5s ease-in-out;
-            -webkit-transition : -webkit-filter 0.5s linear ease-in-out;
         }
             
     }
